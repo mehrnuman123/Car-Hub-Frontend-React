@@ -1,70 +1,80 @@
-# Getting Started with Create React App
+Cars-Hub-Mern-App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Details about app:
 
-## Available Scripts
+car-management-system-Mern-App-
+The car management system "Cars Hub" is developed in mern stack technologies. 
+Key features of this app are: 
+1)Login and Signup with authentication and authorization with Jwt.
+2)On signup,Wellcome email will be send to user address with password 
+3)Complete CRUD operation for Car managemnt -Admin Dashboard 
+4)Complete CRUP for user managment -Admin Dashboard 
+5)Protected Routes for Admin
 
-In the project directory, you can run:
+## Getting Started
 
-### `npm start`
+1. Fork and clone the project.
+2. Update the .env file with your correct local information 
+PORT = 4000
+NODE_ENV = DEVELOPMENT
+NODE_ENV=PRODUCTION
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+DB_LOCAL_URI = mongodb://localhost:27017/carshop
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+JWT_SECRET =
+JWT_EXPIRES_TIME= 
+COOKIE_EXPIRES_TIME=
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+SMTP_HOST = 
+SMTP_PORT = 
+SMTP_EMAIL =
+SMTP_PASSWORD = 
+SMTP_FROM_EMAIL =
+SMTP_FROM_NAME =Cars-Hub
 
-### `npm run build`
+3. Install dependencies: `npm install`
+4. Reset database: `npm run db:reset`
+  - Check the db folder to see what gets created and seeded in the SDB
+5. Run the server: `npm run dev`
+  - Note: nodemon is used, so you should not have to restart your server
+6. Run the frontend App in another terminal: `npm start`
+  - Note: nodemon is used, so you should not have to restart your server
+7. Visit `http://localhost:3000/`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Dependencies Backend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+"bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.0",
+    "cloudinary": "^1.30.0",
+    "cookie-parser": "^1.4.6",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-fileupload": "^1.4.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.3.0",
+    "nodemailer": "^6.7.3",
+    "nodemon": "^2.0.15",
+    "validator": "^13.7.0"
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Dependencies Frontend
+"axios": "^0.27.2",
+    "formik": "^2.2.9",
+    "mdbreact": "^5.2.0",
+    "react": "^18.1.0",
+    "react-alert": "^7.0.3",
+    "react-alert-template-basic": "^1.0.2",
+    "react-bootstrap": "^2.3.0",
+    "react-dom": "^18.1.0",
+    "react-helmet": "^6.1.0",
+    "react-redux": "^8.0.1",
+    "react-router": "^6.3.0",
+    "react-router-dom": "^5.2.0",
+    "react-scripts": "5.0.1",
+    "redux": "^4.2.0",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-thunk": "^2.4.1",
+    "web-vitals": "^2.1.4"
+# Car-Hub---Mern-Stack-Application
