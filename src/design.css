@@ -37,13 +37,12 @@ nav {
 
 .input-group {
   width: 90%;
-  margin-right: 70%
+  margin-right: 35%;
 }
 
 #search_field {
   height: 2.4rem;
   padding: 1rem;
-  ;
 }
 
 #login_btn,
